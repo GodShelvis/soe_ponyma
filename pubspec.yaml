@@ -1,0 +1,26 @@
+name: soe_ponyma
+description: 腾讯云智聆口语评测SDK 暂时仅封装内部录制部分.
+homepage: https://github.com/GodShelvis
+version: 0.1.0
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.20.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  path_provider: ^2.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.godshelvis.soe_ponyma
+        pluginClass: SoePonymaPlugin
+      ios:
+        pluginClass: SoePonymaPlugin
